@@ -1,5 +1,5 @@
 **This is FE learning project
-contains solutions for tasks: **
+contains solutions for tasks:** 
 
 Task 1
 
