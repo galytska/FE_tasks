@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- Adds HTML5 element support for earlier versions of IE -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Latest Good News of Ukraine</title>
+    <meta name="description" content="Newspaper about good news only">
 </head>
 <body>
-<header>
+<header id="mainHeader" role="banner">
     <h1>Good News</h1>
     <p>Find here only good and <strong>positive</strong> news</p>
     <blockquote>
@@ -17,7 +19,7 @@
         </q>
         <cite>Dalai Lama</cite>
     </blockquote>
-    <nav>
+    <nav role="navigation">
         <ul>
             <li><a href="">Politics</a></li>
             <li><a href="">Abroad</a></li>
@@ -27,8 +29,8 @@
         </ul>
     </nav>
 </header>
-<main>
-    <article>
+<main id="newsStories" role="main">
+    <article id="topStory" role="article">
         <header>
             <h2>Top story</h2>
         </header>
@@ -72,11 +74,14 @@
         </ul>
         <p>About the author: </p>
         <address>
-            John Smith is the professor of Cambridge. Contact him at:
-            <a href="mailto:smith@goodnews.org" title="mail John Smith">smith@goodnews.org</a>
+            <a href="https://en.wikipedia.org/wiki/John_Smith" rel="author" title="Read about John">John Smith</a> is
+            the professor of Cambridge. Contact him at:
+            <a class="emailAddress" href="mailto:smith@goodnews.org" title="mail John Smith">smith@goodnews.org</a>
         </address>
         <footer>
-            <p class="pubdate">Today at Time and Date</p>
+            <p class="pubdate">Wrote this on
+                <time datetime="2020-03-20T09:00:00+02:00">March 20, at 9 AM</time>
+            </p>
         </footer>
     </article>
     <section>
@@ -85,8 +90,54 @@
             <p>Recent stories from around the world</p>
         </header>
         <h4>Free taxes</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ornare arcu odio ut sem. Risus viverra adipiscing at in. Eget est lorem ipsum dolor sit amet
+            consectetur adipiscing. Faucibus a pellentesque sit amet porttitor eget. Tempor commodo ullamcorper a lacus
+            vestibulum sed arcu non. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Praesent tristique
+            magna sit amet purus gravida quis. Turpis egestas integer eget aliquet nibh. At erat pellentesque adipiscing
+            commodo elit at. Euismod elementum nisi quis eleifend quam. Ultricies integer quis auctor elit sed
+            vulputate. Eget est lorem ipsum dolor sit amet. Neque gravida in fermentum et. Accumsan tortor posuere ac ut
+            consequat semper. Purus sit amet volutpat consequat mauris nunc congue.</p>
+
         <h4>Fuels prices become lower</h4>
+        <p>Duis convallis convallis tellus id interdum velit laoreet id donec. Sit amet consectetur adipiscing elit.
+            Fringilla ut morbi tincidunt augue interdum velit euismod in. Nec feugiat nisl pretium fusce. Amet aliquam
+            id diam maecenas. Egestas sed sed risus pretium quam vulputate dignissim. Tincidunt arcu non sodales neque
+            sodales ut etiam sit. Lobortis feugiat vivamus at augue eget arcu. Diam vel quam elementum pulvinar etiam
+            non quam lacus. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Est lorem ipsum dolor
+            sit amet. Sed lectus vestibulum mattis ullamcorper velit. Ut porttitor leo a diam sollicitudin tempor id eu.
+            Interdum velit euismod in pellentesque. Faucibus pulvinar elementum integer enim neque volutpat ac.</p>
+        <p>Lectus proin nibh nisl condimentum id venenatis a. Lectus quam id leo in vitae turpis massa sed elementum.
+            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Tellus elementum
+            sagittis vitae et leo duis ut diam. Dignissim sodales ut eu sem. At lectus urna duis convallis convallis
+            tellus id interdum. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Aliquam etiam erat
+            velit scelerisque in dictum. Neque egestas congue quisque egestas diam in. Consequat ac felis donec et odio
+            pellentesque diam volutpat commodo. Viverra orci sagittis eu volutpat odio. Urna neque viverra justo nec
+            ultrices. In nisl nisi scelerisque eu ultrices. Tellus mauris a diam maecenas sed enim. Ornare suspendisse
+            sed nisi lacus sed viverra tellus in hac. Blandit aliquam etiam erat velit scelerisque in. Dignissim sodales
+            ut eu sem integer vitae justo. Quisque sagittis purus sit amet volutpat consequat mauris nunc.</p>
         <h4>Salaries increased</h4>
+        <p>Aenean et tortor at risus viverra. Tincidunt ornare massa eget egestas purus viverra accumsan. Nunc id cursus
+            metus aliquam eleifend mi in nulla posuere. Massa tincidunt dui ut ornare lectus sit. Nunc consequat
+            interdum varius sit amet mattis vulputate. Diam vulputate ut pharetra sit amet aliquam. Sit amet tellus cras
+            adipiscing enim eu turpis. Molestie at elementum eu facilisis. Viverra mauris in aliquam sem. Turpis cursus
+            in hac habitasse platea dictumst quisque sagittis purus. Lacus sed viverra tellus in hac habitasse platea
+            dictumst. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Ut ornare lectus sit amet
+            est.</p>
+        <p>Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Malesuada fames ac turpis egestas
+            maecenas. Duis at consectetur lorem donec. At varius vel pharetra vel. Turpis tincidunt id aliquet risus
+            feugiat in ante metus dictum. Enim nulla aliquet porttitor lacus luctus. Dictum sit amet justo donec enim
+            diam vulputate. Porttitor massa id neque aliquam. Aenean vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant. Sed tempus urna et pharetra pharetra. Neque gravida in fermentum et sollicitudin ac
+            orci phasellus. Enim diam vulputate ut pharetra sit amet aliquam. Ac felis donec et odio pellentesque diam
+            volutpat. Elit ut aliquam purus sit amet.</p>
+        <p>Nisl rhoncus mattis rhoncus urna neque viverra. Ornare arcu dui vivamus arcu. Eget dolor morbi non arcu.
+            Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Malesuada fames ac turpis
+            egestas sed tempus urna et. Amet dictum sit amet justo donec. Consectetur libero id faucibus nisl tincidunt
+            eget nullam non nisi. Sed arcu non odio euismod. Eget lorem dolor sed viverra ipsum. Vel facilisis volutpat
+            est velit egestas dui. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
+            Facilisi cras fermentum odio eu feugiat. Tortor at risus viverra adipiscing at in. Nibh venenatis cras sed
+            felis eget velit.</p>
     </section>
     <section>
         <header>
@@ -94,7 +145,44 @@
             <p>Top read news</p>
         </header>
         <h4>Queen Elizabeth about a new hat</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Magna fringilla urna porttitor rhoncus dolor purus non enim. Vulputate odio ut enim blandit.
+            Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Ut porttitor leo a diam. Molestie nunc non
+            blandit massa enim nec dui nunc mattis. Nulla malesuada pellentesque elit eget gravida cum sociis. Rutrum
+            quisque non tellus orci. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.
+            Scelerisque fermentum dui faucibus in ornare quam viverra. Sit amet porttitor eget dolor morbi. Tellus
+            molestie nunc non blandit. Ultrices vitae auctor eu augue ut lectus arcu bibendum. Ornare arcu odio ut sem
+            nulla pharetra diam sit. In ornare quam viverra orci. Ullamcorper sit amet risus nullam eget felis eget
+            nunc. Quam vulputate dignissim suspendisse in est ante in. Quam adipiscing vitae proin sagittis nisl.</p>
+        <p>Eget magna fermentum iaculis eu non. Purus sit amet volutpat consequat mauris nunc congue nisi. Pharetra vel
+            turpis nunc eget lorem dolor sed. Enim nec dui nunc mattis enim ut tellus. Cursus vitae congue mauris
+            rhoncus aenean vel elit scelerisque mauris. Faucibus purus in massa tempor nec feugiat nisl. At tempor
+            commodo ullamcorper a lacus vestibulum sed. Dictum varius duis at consectetur. Diam quam nulla porttitor
+            massa id neque aliquam vestibulum morbi. Neque aliquam vestibulum morbi blandit cursus.</p>
+        <p>Nulla facilisi etiam dignissim diam. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat.
+            Nullam non nisi est sit amet facilisis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Porta
+            lorem mollis aliquam ut. Interdum consectetur libero id faucibus. Sed odio morbi quis commodo odio aenean
+            sed adipiscing. Viverra ipsum nunc aliquet bibendum enim facilisis. Sapien et ligula ullamcorper malesuada
+            proin libero. Eu nisl nunc mi ipsum faucibus. Curabitur vitae nunc sed velit dignissim sodales ut eu.</p>
+        <p>Blandit cursus risus at ultrices mi tempus. Velit scelerisque in dictum non consectetur a. Iaculis at erat
+            pellentesque adipiscing commodo elit at imperdiet. Ullamcorper eget nulla facilisi etiam dignissim diam.
+            Dictum fusce ut placerat orci nulla pellentesque. Ornare arcu dui vivamus arcu felis bibendum. Viverra
+            tellus in hac habitasse platea dictumst vestibulum. Eu facilisis sed odio morbi. Orci phasellus egestas
+            tellus rutrum tellus pellentesque. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Et
+            sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Eu lobortis elementum nibh tellus
+            molestie nunc non blandit. Vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
+
         <h4>Weekend weather forecast</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Dui id ornare arcu odio. Enim blandit volutpat maecenas volutpat blandit aliquam. Mauris augue
+            neque gravida in fermentum et sollicitudin ac orci. Vulputate enim nulla aliquet porttitor lacus luctus
+            accumsan. Vitae auctor eu augue ut lectus arcu bibendum at varius. Mauris ultrices eros in cursus turpis
+            massa tincidunt dui. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Mauris augue neque
+            gravida in. Felis imperdiet proin fermentum leo vel. Sit amet consectetur adipiscing elit. Tristique
+            sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Risus sed vulputate odio ut enim blandit
+            volutpat maecenas. Odio aenean sed adipiscing diam donec. Dictumst vestibulum rhoncus est pellentesque elit
+            ullamcorper dignissim cras. Netus et malesuada fames ac turpis egestas sed tempus. Cras semper auctor neque
+            vitae tempus quam pellentesque nec. Tincidunt vitae semper quis lectus nulla at.</p>
     </section>
     <section>
         <h3>Interviews</h3>
@@ -123,22 +211,28 @@
         </figure>
     </aside>
 </main>
-<aside>
-    <h5>Car rent</h5>
+<aside role="complementary">
+    <!-- Ad content here -->
+    <h5>Need a car?</h5>
+    <p><a href="https://en.wikipedia.org/wiki/Car_rental" title="Car rent Ad" rel="external nofollow">The Best cars for
+        rent!</a></p>
 </aside>
-<footer>
+<footer id="pageFooter" role="contentinfo">
+    <p><b>Good News</b></p>
     <p>Contact us</p>
     <div class="rightCol">
-        <p><a href="tel://548-457-458" title="contact phone number">phone: 548-457-458</a></p>
-        <p><a href="mailto:info@goodnews.org" title="mail address">info@goodnews.org</a></p>
+        <p><a href="tel://548-457-458" title="contact phone number">phone: 000-00-00</a></p>
+        <p><a class="emailAddress" href="mailto:info@goodnews.org" title="mail address">info@goodnews.org</a></p>
     </div>
     <div class="leftCol">
-        <p><b>Good News</b></p>
-        <p>2578 Kreshatic Street<br>
+        <p>0000 Kreshatic Street<br>
             Kiev, Ukraine</p>
     </div>
     <p>
-        <small>all content &copy;copyright 2020 Good News</small>
+        <small>all content &copy;copyright
+            <time>2020</time>
+            Good News
+        </small>
     </p>
 </footer>
 </body>
