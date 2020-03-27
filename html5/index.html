@@ -8,6 +8,7 @@
     <![endif]-->
     <title>Latest Good News of Ukraine</title>
     <meta name="description" content="Newspaper about good news only">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header id="mainHeader" role="banner">
@@ -20,77 +21,77 @@
         <cite>Dalai Lama</cite>
     </blockquote>
     <nav role="navigation">
-        <ul>
-            <li><a href="">Politics</a></li>
-            <li><a href="">Abroad</a></li>
-            <li><a href="">Money</a></li>
-            <li><a href="">Health</a></li>
-            <li><a href="">Celebrity</a></li>
+        <ul class="navList">
+            <li class="flexItem, navBtn"><a href="">Politics</a></li>
+            <li class="flexItem, navBtn"><a href="">Abroad</a></li>
+            <li class="flexItem, navBtn"><a href="">Money</a></li>
+            <li class="flexItem, navBtn"><a href="">Health</a></li>
+            <li class="flexItem, navBtn"><a href="">Celebrity</a></li>
         </ul>
     </nav>
 </header>
-<aside>
-    <p>Listen to relaxing music while reading Good News</p>
+<aside id="music">
     <audio controls>
         <source src="_audio/lui-armstrong-what-a-wonderful-world.mp3" type="audio/mp3">
     </audio>
 </aside>
 <main id="newsStories" role="main">
     <article id="topStory" role="article">
-        <header>
-            <h2>Top story</h2>
-        </header>
-        <figure>
-            <img src="_images/top_story.jpeg" alt="top story photo">
-        </figure>
-        <p>
-            Being outside is about more than just barbecues and beaches. The latest scientific research has proven that
-            spending time in the fresh air surrounded by nature’s beauty boosts the body and the brain in more than one
-            way.
-        </p>
-        <p>
-            Besides the positive impact on the planet, spending time outdoors has been proven to have an uplifting
-            effect on the wellbeing of its residents. As the Head of the Social and Economic Research Group of Forest
-            Research, Dr Liz O’Brien has been researching how forests and trees can improve the health and wellness of
-            people. According to Dr O’Brien’s findings, <em>the diversity of the scenery and wildlife in forests
-            enhances a sense of freedom and stimulates the senses.</em> This improves how they feel about themselves,
-            others and
-            the world. Other benefits of getting up close and personal with Mother Nature include:
-        </p>
-        <ul>
-            <li>
-                According to science the color green gives a psychological energy boost. Because of all the green around
-                outside, spending 20 minutes in open air gives an energy boost more or less like having a cup of coffee.
-                This means it is also easier to exercise outside.
-            </li>
-            <li>
-                A study found that patients recovering from surgery who are exposed to intense sunlight tend to use less
-                pain medication.
-            </li>
-            <li>
-                Scientists believe that breathing in phytoncides (<i>chemicals produced by plants</i>) may increase
-                white blood cells which help us fight off infections. This means that spending time outside may boost
-                our immune systems.
-            </li>
-            <li>
-                Psychologists have discovered that backpackers scored a higher percentage on creativity tests after
-                spending time in the wild. So, for those who struggle with writer’s or artist’s block, the outdoors may
-                help.
-            </li>
-        </ul>
-        <p>About the author: </p>
-        <address>
-            <a href="https://en.wikipedia.org/wiki/John_Smith" rel="author" title="Read about John">John Smith</a> is
-            the professor of Cambridge. Contact him at:
-            <a class="emailAddress" href="mailto:smith@goodnews.org" title="mail John Smith">smith@goodnews.org</a>
-        </address>
-        <footer>
-            <p class="pubdate">Wrote this on
-                <time datetime="2020-03-20T09:00:00+02:00">March 20, at 9 AM</time>
+        <div class="content_wrap">
+            <header>
+                <h2>Top story</h2>
+            </header>
+            <p>
+                Being outside is about more than just barbecues and beaches. The latest scientific research has proven
+                that
+                spending time in the fresh air surrounded by nature’s beauty boosts the body and the brain in more than
+                one
+                way.
             </p>
-        </footer>
+            <ul>
+                <li>
+                    According to science the color green gives a psychological energy boost. Because of all the green
+                    around
+                    outside, spending 20 minutes in open air gives an energy boost more or less like having a cup of
+                    coffee.
+                    This means it is also easier to exercise outside.
+                </li>
+                <li>
+                    A study found that patients recovering from surgery who are exposed to intense sunlight tend to use
+                    less
+                    pain medication.
+                </li>
+                <li>
+                    Scientists believe that breathing in phytoncides (<i>chemicals produced by plants</i>) may increase
+                    white blood cells which help us fight off infections. This means that spending time outside may
+                    boost
+                    our immune systems.
+                </li>
+                <li>
+                    Psychologists have discovered that backpackers scored a higher percentage on creativity tests after
+                    spending time in the wild. So, for those who struggle with writer’s or artist’s block, the outdoors
+                    may
+                    help.
+                </li>
+            </ul>
+            <footer>
+                <p>About the author: </p>
+                <address>
+                    <a href="https://en.wikipedia.org/wiki/John_Smith" rel="author" title="Read about John">John
+                        Smith</a>
+                    is
+                    the professor of Cambridge. Contact him at:
+                    <a href="mailto:smith@goodnews.org"
+                       title="mail John Smith">smith@goodnews.org</a>
+                </address>
+
+                <p class="pubdate">Wrote this on
+                    <time datetime="2020-03-20T09:00:00+02:00">March 20, at 9 AM</time>
+                </p>
+            </footer>
+        </div>
     </article>
-    <section>
+    <section class="latestNews">
         <header>
             <h3>Latest news</h3>
             <p>Recent stories from around the world</p>
@@ -122,7 +123,9 @@
             ultrices. In nisl nisi scelerisque eu ultrices. Tellus mauris a diam maecenas sed enim. Ornare suspendisse
             sed nisi lacus sed viverra tellus in hac. Blandit aliquam etiam erat velit scelerisque in. Dignissim sodales
             ut eu sem integer vitae justo. Quisque sagittis purus sit amet volutpat consequat mauris nunc.</p>
+
         <h4>Salaries increased</h4>
+        <img src="_images/salary_increase.jpeg" alt="salary increase image">
         <p>Aenean et tortor at risus viverra. Tincidunt ornare massa eget egestas purus viverra accumsan. Nunc id cursus
             metus aliquam eleifend mi in nulla posuere. Massa tincidunt dui ut ornare lectus sit. Nunc consequat
             interdum varius sit amet mattis vulputate. Diam vulputate ut pharetra sit amet aliquam. Sit amet tellus cras
@@ -145,11 +148,12 @@
             Facilisi cras fermentum odio eu feugiat. Tortor at risus viverra adipiscing at in. Nibh venenatis cras sed
             felis eget velit.</p>
     </section>
-    <section>
+    <section class="popNews">
         <header>
             <h3>Popular news</h3>
             <p>Top read news</p>
         </header>
+        <img src="_images/hat.jpeg" alt="queen picture">
         <h4>Queen Elizabeth about a new hat</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Magna fringilla urna porttitor rhoncus dolor purus non enim. Vulputate odio ut enim blandit.
@@ -190,7 +194,7 @@
             ullamcorper dignissim cras. Netus et malesuada fames ac turpis egestas sed tempus. Cras semper auctor neque
             vitae tempus quam pellentesque nec. Tincidunt vitae semper quis lectus nulla at.</p>
     </section>
-    <section>
+    <section class="interviews">
         <h3>Interviews</h3>
         <dl>
             <dt>Prime minister</dt>
@@ -217,7 +221,7 @@
         </figure>
     </aside>
 </main>
-<aside role="complementary">
+<aside role="complementary" class="Ad">
     <!-- Ad content here -->
     <h5>Need a car?</h5>
     <p><a href="https://en.wikipedia.org/wiki/Car_rental" title="Car rent Ad" rel="external nofollow">The Best cars for
@@ -226,14 +230,19 @@
 <footer id="pageFooter" role="contentinfo">
     <p><b>Good News</b></p>
     <p>Contact us</p>
-    <div class="rightCol">
-        <p><a href="tel://548-457-458" title="contact phone number">phone: 000-00-00</a></p>
-        <p><a class="emailAddress" href="mailto:info@goodnews.org" title="mail address">info@goodnews.org</a></p>
-    </div>
-    <div class="leftCol">
-        <p>0000 Kreshatic Street<br>
-            Kiev, Ukraine</p>
-    </div>
+    <ul class="contactList">
+        <li>
+            <p><a href="tel://548-457-458" title="contact phone number">phone: 000-00-00</a></p>
+        </li>
+        <li>
+            <p><a href="mailto:info@goodnews.org" title="mail address">info@goodnews.org</a></p>
+        </li>
+        <li>
+            <p>0000 Kreshatic Street
+                Kiev, Ukraine</p>
+        </li>
+
+    </ul>
     <p>
         <small>all content &copy;copyright
             <time>2020</time>
